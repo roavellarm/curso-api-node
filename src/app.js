@@ -9,6 +9,9 @@ mongoose.connect(
   'mongodb+srv://Rodrigo:Rodrigo2012@cluster0-jcvca.azure.mongodb.net/test?retryWrites=true&w=majority'
 )
 
+// Carrega os Models
+const Product = require('./models/product')
+
 // Carrega as Rotas
 const indexRoute = require('./routes/index-route')
 const productRoute = require('./routes/product-route')
