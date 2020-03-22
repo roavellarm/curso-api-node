@@ -57,3 +57,10 @@ http que criará um listener que ficará ouvindo uma porta para poder receber
 as requisições e responder as mesmas.
 
 Os passos seguintes encontram-se no arquivo `server.js`
+
+Adicionaremos o nodemon para não precisar ficar restartando o servidor a cada
+alteração
+
+```
+$ npm install nodemon --save-dev
+```
