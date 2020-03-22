@@ -64,3 +64,24 @@ alteração
 ```
 $ npm install nodemon --save-dev
 ```
+
+Criaremos exemplos de rotas usando os diferentes métodos http
+- get
+- post
+- put
+- delete
+
+E utilizaremos os status code para nos comunicarmos com o servidor
+- 200 ok
+- 201 created
+- 400 badrequest
+- 401 não autenticado
+- 403 acesso negado
+- 500 internal server error
+
+Instalaremos o body-parser para poder parsear os body das requests
+```
+$ npm install body-parser --save
+```
+
+Adicionar ele no app para que todos os request saibam que ele exite
