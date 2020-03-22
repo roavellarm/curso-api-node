@@ -1,7 +1,13 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
 const app = express()
+
+// Conecta ao banco
+mongoose.connect(
+  'mongodb+srv://Rodrigo:Rodrigo2012@cluster0-jcvca.azure.mongodb.net/test?retryWrites=true&w=majority'
+)
 
 // Carrega as Rotas
 const indexRoute = require('./routes/index-route')

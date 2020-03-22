@@ -83,5 +83,22 @@ Instalaremos o body-parser para poder parsear os body das requests
 ```
 $ npm install body-parser --save
 ```
+Adicionar ele no app para que todos os request saibam que ele existe.
 
-Adicionar ele no app para que todos os request saibam que ele exite
+
+Instalação do mongoDB, é NoSQL (not only SQL): www.mongodb.com
+ou utilizar o servidor www.mlab.com.
+
+connectionString
+mongodb+srv://Rodrigo:Rodrigo2012@cluster0-jcvca.azure.mongodb.net/test?retryWrites=true&w=majority
+
+Instalar o gerenciador com interface gráfica `Studio 3T` através do link 
+www.studio3t.com (ou pode ser o robomongo tb)
+
+
+Dica de livro: NoSql Distiled (Martin Fowler)
+
+Instalar o mongoose
+```
+$ npm install mongoose --save
+```
