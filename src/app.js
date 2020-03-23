@@ -6,7 +6,7 @@ const app = express()
 
 // Conecta ao banco
 mongoose.connect(
-  'mongodb+srv://Rodrigo:Rodrigo2012@cluster0-jcvca.azure.mongodb.net/test?retryWrites=true&w=majority'
+  'mongodb://rodrigo:rodrigo123@ds229918.mlab.com:29918/generics'
 )
 
 // Carrega os Models
