@@ -1,13 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const config = require('./config')
 
 const app = express()
 
 // Conecta ao banco
-mongoose.connect(
-  'mongodb://rodrigo:rodrigo123@ds229918.mlab.com:29918/generics'
-)
+mongoose.connect(config.connectionString)
 
 // Carrega os Models
 const Product = require('./models/product')
