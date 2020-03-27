@@ -36,7 +36,13 @@ const schema = new Schema({
       type: String,
       required: true
     }
-  ]
+  ],
+  image: {
+    // ngImgCrop
+    type: String, // url da imagem
+    required: true,
+    trim: true
+  }
 })
 
 module.exports = mongoose.model('Product', schema)
