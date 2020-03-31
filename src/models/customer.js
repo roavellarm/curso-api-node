@@ -15,7 +15,16 @@ const schema = new Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  roles: [
+    // array de strings onde os valores permitidos são user e admin
+    {
+      type: String,
+      required: true,
+      enum: ['user', 'admin'],
+      default: 'user' // por padrão é o user que será criado
+    }
+  ]
 })
 
 module.exports = mongoose.model('Customer', schema)
