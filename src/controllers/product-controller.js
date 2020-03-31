@@ -4,7 +4,7 @@ const ValidationContract = require('../validators/fluent-validator')
 const repository = require('../repositories/product-repository')
 const azure = require('azure-storage')
 const guid = require('guid')
-let config = require('../config')
+const config = require('../config')
 
 exports.get = async (req, res, next) => {
   try {
