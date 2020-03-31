@@ -22,8 +22,23 @@ const orderRoute = require('./routes/order-route')
 const courseRoute = require('./routes/course-route')
 
 // SCRIPTS
-app.use(bodyParser.json())
+app.use(
+  bodyParser.json({
+    limit: '5mb'
+  })
+) // O limimte de até 5 megas pra envio de requests
 app.use(bodyParser.urlencoded({ extended: false }))
+
+// Habilita o CORS
+app.use(function(req, res, next) {
+  res.header('Access-Controll-Allow-Origin', '*')
+  res.header(
+    'Access-Controll-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, x-access-token'
+  )
+  res.header('Access-Controll-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+  next()
+})
 
 app.use('/', indexRoute)
 app.use('/products', productRoute)
